@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Barra de Navegación */
+nav {
+    display: flex;
+    justify-content: space-between; /* Coloca el contenido al inicio y al final */
+    align-items: center;
+    background-color: #6a7db8;
+    color: #fff;
+    padding: 10px;
+}
+
+/* Logo */
+.logo img {
+    max-height: 70px;
+    margin-left: 20px; /* Ajusta el espacio a la izquierda del logotipo */
+}
+
+/* Búsqueda */
+.search {
+    flex: 1;
+    margin: 0 20px; /* Reduce el margen izquierdo y derecho */
+    text-align: left;
+}
+
+.search input {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search button {
+    background-color: #E4E3E9;
+    color: #000000;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Menú */
+.menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.menu ul li {
+    margin-right: 20px;
+    text-align: left;
+}
+
+.menu ul li:last-child {
+    margin-right: 20px; /* Reduce el margen derecho */
+}
+
+.menu ul a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.menu img {
+    height: 30px;
+    margin-top: -10px;
+}
+
+.market {
+    align-items: flex-start;
+}
+
+/* Segunda barra de navegación */
+.navegacion {
+    width: 100%;
+    height: 50px; /* Ajusta la altura según tus necesidades */
+    background: #8089C0;
+}
+
+.navegacion ul {
+    list-style: none;
+}
+
+.navegacion li {
+    display: inline-block;
+}
+
+.navegacion a {
+    display: block;
+    padding: 8px 20px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+.navegacion li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Submenu */
+.submenu {
+    position: absolute;
+    background: #0000008e;
+    width: 15%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s; /* Reducción del tiempo de transición */
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Estilos para la sección de ayuda */
+.ayuda {
+    padding: 20px;
+}
+
+.ayuda h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilos para el acordeón */
+.acordeon {
+    border: 1px solid #ccc;
+}
+
+.pregunta {
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.pregunta h3 {
+    font-size: 18px;
+    color: #555;
+    margin: 0;
+    padding: 10px;
+}
+
+.respuesta {
+    display: none;
+    color: #000000;
+    padding: 10px;
+}
+
+.enlace {
+    color: #6a7db8;
+}
+/*Pie de Pagina*/
+.footer-elemento {
+    display: inline-block;
+    margin: 10px;
+}
+
+.pie-pagina {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #6a7db8;
+    color: #fff;
+}
+.pie-pagina .grupo-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 50%;
+}
+.pie-pagina .grupo-1 .box {
+flex: 1;
+text-align: center;
+margin: 10px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box {
+    color: #efefef;
+    margin-bottom: 1px;
+}
+.pie-pagina .grupo-1 .red-social a {
+    font-size: 24px;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #00000028;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color:#8089C0;
+}
+.pie-pagina .grupo-2{
+    text-align: center;
+    background-color: #8089C0;
+    padding: 5px 10px;
+    text-align: center;
+    color: #fff;
+
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+iframe {
+    width: 50%;
+    height: 150px;
+}
+h2 {
+    color: #ffffff;
+    font-weight: bold;
+}
