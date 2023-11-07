@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONATTO INDUMENTARIA</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./submenu.css">
+    <script src="https://kit.fontawesome.com/ea58c9055e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header> <header class="hero">  
+        <nav>
+            <div class="logo">
+            <a href="/pagina-de-inicio/inicio.html"><img src="./images/logoShop.png" class="Market"></a></li>
+            </div>
+            <div class="search">
+                <input type="text" id="search-input" placeholder="Buscar Productos">  
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="/pagina-de-inicio/inicio.html">Inicio</a></li>
+                    <li><a href="/ayuda/ayuda.html">Ayuda</a></li>
+                    <li><a href="/contacto/contacto.html">Contacto</a></li>
+                    <div class="header-section container">
+                        <div>
+                            <img onclick="showCart(this)" class="cart" src="./images/cart.png" alt="">
+                            <p class="count-product">0</p>
+                        </div>
+                        <div class="cart-products" id="products-id">
+                            <p class="close-btn" onclick="closeBtn()">X</p>
+                            <h3>Carrito</h3>
+                            <div class="card-items">
+                            </div>
+                            <h2>Total:<strong class="price-total">0</strong></h2>
+                            <div class="button-container">
+                                <a href="./metodo-pago/pago.html" id="comprar-btn" class="nav-button">Comprar</a>
+                            </div> 
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </nav>
+    </nav>
+</nav>
+            <nav class="navegacion">
+                <ul class="menu2">
+                    <li><a href="">Categoria</a>
+                        <ul class="submenu">
+                            <li><a href="/submenu/remeras.html">Remeras</a></li>
+                            <li><a href="/submenu/pantalones.html">Pantalones</a></li>
+                            <li><a href="/submenu/abrigos.html">Abrigos</a></li>
+                            <li><a href="/tienda/tienda.html">Todo</a></li>
+                            <li><a href="/ofertas/oferta.html">Ofertas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+            <section class="container">    
+                <div class="products">
+                    <div class="carts">
+                        <div>
+                            <img src="./products/abrigo/producto1.jpg" alt="">
+                            <p>$<span>22600</span></p>
+                        </div>
+                        <p class="title">Hoddie Macrocosm</p>
+                        <p class="selected-talle">
+                            <span class="talle-value"></span>
+                        </p>
+                        <select class="talle-dropdown">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                        <a href="javascript:void(0);" data-id="1" class="btn-add-cart">Agregar al carrito</a>
+                    </div>
+                    <div class="carts">
+                        <div>
+                            <img src="./products/abrigo/producto2.jpg" alt="">
+                            <p>$<span>25000</span></p>
+                        </div>
+                        <p class="title">Buzo YVESRICCI</p>
+                        <p class="selected-talle">
+                            <span class="talle-value"></span>
+                        </p>
+                        <select class="talle-dropdown">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                        <a href="javascript:void(0);" data-id="2" class="btn-add-cart">Agregar al carrito</a>
+                    </div>
+                    <div class="carts">
+                        <div>
+                            <img src="./products/abrigo/producto3.jpg" alt="">
+                            <p>$<span>29000</span></p>
+                        </div>
+                        <p class="title">Campera Negra</p>
+                        <p class="selected-talle">
+                            <span class="talle-value"></span>
+                        </p>
+                        <select class="talle-dropdown">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                        <a href="javascript:void(0);" data-id="3" class="btn-add-cart">Agregar al carrito</a>
+                    </div>
+                    <div class="carts">
+                        <div>
+                            <img src="./products/abrigo/producto4.jpg" alt="">
+                            <p>$<span>20600</span></p>
+                        </div>
+                        <p class="title">Chaqueta Negra</p>
+                        <p class="selected-talle">
+                            <span class="talle-value"></span>
+                        </p>
+                        <select class="talle-dropdown">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                        <a href="javascript:void(0);" data-id="4" class="btn-add-cart">Agregar al carrito</a>
+                    </div>
+                    <div class="carts">
+                        <div>
+                            <img src="./products/abrigo/producto5.jpg" alt="">
+                            <p>$<span>24900</span></p>
+                        </div>
+                        <p class="title">Buzo Negra</p>
+                        <p class="selected-talle">
+                            <span class="talle-value"></span>
+                        </p>
+                        <select class="talle-dropdown">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                        <a href="javascript:void(0);" data-id="5" class="btn-add-cart">Agregar al carrito</a>
+                    </div>
+                    <div class="carts">
+                        <div>
+                            <img src="./products/abrigo/producto6.jpg" alt="">
+                            <p>$<span>23500</span></p>
+                        </div>
+                        <p class="title">Buzo Leisure Club Verde</p>
+                        <p class="selected-talle">
+                            <span class="talle-value"></span>
+                        </p>
+                        <select class="talle-dropdown">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                        <a href="javascript:void(0);" data-id="6" class="btn-add-cart">Agregar al carrito</a>
+                    </div>
+                    <div class="carts">
+                        <div>
+                            <img src="./products/abrigo/producto7.jpg" alt="">
+                            <p>$<span>20900</span></p>
+                        </div>
+                        <p class="title">Hoddie Urban</p>
+                        <p class="selected-talle">
+                            <span class="talle-value"></span>
+                        </p>
+                        <select class="talle-dropdown">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                        <a href="javascript:void(0);" data-id="7" class="btn-add-cart">Agregar al carrito</a>
+                    </div>
+                    <div class="carts">
+                        <div>
+                            <img src="./products/abrigo/producto8.jpg" alt="">
+                            <p>$<span>28990</span></p>
+                        </div>
+                        <p class="title">Chaqueta'19-91</p>
+                        <p class="selected-talle">
+                            <span class="talle-value"></span>
+                        </p>
+                        <select class="talle-dropdown">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                        <a href="javascript:void(0);" data-id="8" class="btn-add-cart">Agregar al carrito</a>
+                    </div>
+                    <div class="carts">
+                        <div>
+                            <img src="./products/abrigo/producto9.jpg" alt="">
+                            <p>$<span>23500</span></p>
+                        </div>
+                        <p class="title">Buzo California Negro</p>
+                        <p class="selected-talle">
+                            <span class="talle-value"></span>
+                        </p>
+                        <select class="talle-dropdown">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                        <a href="javascript:void(0);" data-id="9" class="btn-add-cart">Agregar al carrito</a>
+                    </div>
+                    <div class="carts">
+                        <div>
+                            <img src="./products/abrigo/producto10.jpg" alt="">
+                            <p>$<span>20950</span></p>
+                        </div>
+                        <p class="title">Sueter Beage</p>
+                        <p class="selected-talle">
+                            <span class="talle-value"></span>
+                        </p>
+                        <select class="talle-dropdown">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                        <a href="javascript:void(0);" data-id="10" class="btn-add-cart">Agregar al carrito</a>
+                    </div>
+                    <div class="carts">
+                        <div>
+                            <img src="./products/abrigo/producto11.jpg" alt="">
+                            <p>$<span>24900</span></p>
+                        </div>
+                        <p class="title">Buzo COOL</p>
+                        <p class="selected-talle">
+                            <span class="talle-value"></span>
+                        </p>
+                        <select class="talle-dropdown">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                        <a href="javascript:void(0);" data-id="11" class="btn-add-cart">Agregar al carrito</a>
+                    </div>
+                    <div class="carts">
+                        <div>
+                            <img src="./products/abrigo/producto12.jpg" alt="">
+                            <p>$<span>20900</span></p>
+                        </div>
+                        <p class="title">Hoddie Athletic Marron</p>
+                        <p class="selected-talle">
+                            <span class="talle-value"></span>
+                        </p>
+                        <select class="talle-dropdown">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                        <a href="javascript:void(0);" data-id="12" class="btn-add-cart">Agregar al carrito</a>
+                    </div>
+                </div>
+            </section>
+    </section>
+<!--::::Pie de Pagina::::::-->
+<footer class="pie-pagina">
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+                <a href="#">
+                    <img src="./images/logoShop-blanco.png" alt="Logo Donatto">
+                </a>
+            </figure>
+        </div>
+        <div class="box">
+            <h2>Información de contacto</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+        </div>
+        <div class="box">
+            <h2>SÍGUENOS</h2>
+            <div class="red-social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/donatto.indumentaria/" class="fa fa-instagram"></a>
+            </div>
+        </div>
+        <div class="box">
+            <h2>Ubicación</h2>
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210117.92743674965!2d-68.49001539484544!3d-34.62709974400384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967907fdb13d06a7%3A0xe0fb2796d473309d!2sSan%20Rafael%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1698705519776!5m2!1ses-419!2sar"
+            width="600"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            ></iframe>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <p>🧠 <a href="https://github.com/CodeSystem2022/BrainStorm-CuartoSemestre/">Brainstorm</a></p>
+    </div>
+</footer>
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+            document.getElementById("products-id").style.display = "none";
+        }
+
+</script>
+    <script src="./submenu.js" ></script>
+</body>
+</html>

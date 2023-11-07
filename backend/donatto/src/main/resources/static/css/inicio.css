@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Barra de Navegación */
+nav {
+    background-color: #6a7db8; /* Color de fondo del menú */
+    color: #fff; /* Color de texto del menú */
+    display: flex;
+    justify-content: flex-start; /* Alineación al inicio */
+    align-items: center;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Logo */
+.logo img {
+    max-height: 70px; /* Ajusta la altura máxima del logotipo */
+    margin-left: 100px; /* Espacio a la izquierda del logotipo */
+}
+
+/* Búsqueda */
+.search {
+    flex: 1; /* La sección de búsqueda se expandirá para ocupar el espacio disponible */
+    margin: 0 50px;
+    text-align: left;
+}
+
+.search input {
+    width: 30%;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search button {
+    background-color: #E4E3E9; /* Color del botón de búsqueda */
+    color: #000000;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Menú */
+.menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-right: 20px;
+}
+
+.menu ul li {
+    margin-right: 20px;
+    text-align: left;
+}
+
+.menu ul li:last-child {
+    margin-right: 60px;
+}
+
+.menu ul a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.menu img {
+    height: 30px; /* Ajusta la altura máxima de la imagen del mercado */
+    margin-top: -10px; /* Reduce el espacio debajo de la imagen */
+}
+
+.market {
+    align-items: flex-start; 
+}
+
+/* segunda barra de navegacion*/
+
+.navegacion{
+    width: 100%;
+    height: 10%;
+    margin: 0px auto;
+    background: #8089C0;
+}
+
+.navegacion ul{
+    list-style: none;
+}
+
+.menu2 > li{
+    /*position: relative;*/
+    display: inline-block;
+}
+
+.menu2 > li > a{
+    display: block;
+    padding: 8px 20px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+.menu2 li a:hover{
+    background-color: #E4E3E9;
+    color: #000000;
+    transition: all .3s;
+
+}
+
+/*submenu*/
+.submenu{
+    position: absolute;
+    background: #0000009c;
+    width: 15%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.submenu li a{
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    
+}
+.menu2 li:hover .submenu{
+    visibility: visible;
+    opacity: 1;
+}
+/* Contenedor Principal */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Info */
+.hero {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%),
+        url('/pagina-de-inicio/images/portada-inicio.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    z-index: -1; /* Enviar imagen atrás */
+}
+
+/* Info */
+.hero__container {
+    max-width: 800px;
+    --padding-container: 0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.hero__title {
+    font-size: 4rem;
+}
+
+.hero__paragraph {
+    margin-bottom: 20px;
+}
+
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    background-color: white;
+}
+
+/* Imagenes */
+.imagen {
+    width: 25%;
+    margin: 10px;
+    border: 1px solid #ccc; 
+}
+
+.imagen img {
+    width: 100%;
+}
+
+/* Estilo para los elementos de la lista en el menú desplegable */
+.dropdown-content li {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    position: absolute;
+    background-color: #000000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Cambia el estilo del enlace en el menú desplegable al pasar el ratón sobre él */
+.dropdown-content li:hover {
+    background-color: #333; /* Cambia el color al pasar el ratón */
+}
+
+/* Oculta el menú desplegable por defecto */
+.dropdown-content {
+    display: none;
+}
+
+/* Establece un estilo para el enlace "Categoría" cuando se despliegue el menú */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*:::::Pie de Pagina*/
+.footer-elemento {
+    display: inline-block;
+    margin: 10px;
+}
+
+.pie-pagina{
+    background-color: #6a7db8;
+}
+.pie-pagina .grupo-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 50%;
+}
+.pie-pagina .grupo-1 .box {
+flex: 1;
+text-align: center;
+margin: 10px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box {
+    color: #efefef;
+    margin-bottom: 1px;
+}
+.pie-pagina .grupo-1 .red-social a {
+    font-size: 24px;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #00000028;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color:#8089C0;
+}
+.pie-pagina .grupo-2{
+    text-align: center;
+    background-color: #8089C0;
+    padding: 5px 10px;
+    text-align: center;
+    color: #fff;
+
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+iframe {
+    width: 50%;
+    height: 150px;
+}
+h2 {
+    color: #ffffff;
+    font-weight: bold;
+}
