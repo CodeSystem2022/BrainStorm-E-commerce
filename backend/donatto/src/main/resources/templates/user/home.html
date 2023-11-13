@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://thymeleaf.org">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+
+  <!-- Bootstrap core CSS -->
+  <link th:href="@{vendor/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" th:href="@{/css/user.css}">
+  <link rel="stylesheet" type="text/css" th:href="@{/css/footer.css}">
+  <!-- Custom styles for this template -->
+
+</head>
+
+<body>
+
+  <!-- Navigation | if: si la session es null se mostrara determinado header-->
+  <div th:include="user/template_user.html::header" th:if="${sesion==null}">
+  </div>
+
+  <div th:include="user/template_user.html::header-user" th:unless="${sesion==null}">
+  </div>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4">
+      <h1 class="display-3">Bienvenido a Donatto</h1>
+      <p class="lead">Tu tienda de productos en Línea</p>
+    </header>
+
+    <!-- Page Features -->
+    <div class="row text-center">
+
+      <div class="col-lg-3 col-md-6 mb-4" th:each="product: ${products}">
+        <div class="card h-100">
+          <img class="card-img-top" th:src="@{/uploads/{image} (image=${product.image})}" alt="">
+          <div class="card-body">
+            <p class="card-text" th:text="${product.name}"></p>
+          </div>
+          <div class="card-footer">
+            <a th:href="@{/producthome/{id} (id=${product.id}) }" class="btn btn-success">Ver producto</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+
+  <!-- Footer -->
+  <div th:include="user/template_user.html::footer">
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script th:src="@{vendor/jquery/jquery.min.js}"></script>
+  <script th:src="@{vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
+
+</body>
+
+</html>
