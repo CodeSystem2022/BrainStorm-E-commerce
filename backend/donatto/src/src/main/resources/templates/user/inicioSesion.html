@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://thymeleaf.org">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Registro</title>
+
+    
+    <!-- Bootstrap core CSS -->
+    <link th:href="@{/vendor/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/inicioSesion.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/user.css}">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a th:href="@{/}"><img th:src="@{/images/donatto.png}" class="Market"></a></li>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a th:href="@{/}">Inicio</a></li>
+                    <li><a th:href="@{/user/cerrar}">Salir</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Login -->
+    <div class="login-page">
+        <div class="form">
+          <form class="login-form" th:action="@{/user/acceder}" method="post">
+            <input type="username" id="username" name="username" placeholder="Nombre de Usuario" required>
+            <input type="password" id="password" name="password" placeholder="Contraseña" required>
+            <button>Ingresar</button>
+            <p class="message">¿No estás registrado? <a th:href="@{/user/register}">Crear una cuenta</a></p>          
+          </form>
+        </div>
+      </div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script th:src="@{/vendor/jquery/jquery.min.js}"></script>
+    <script th:src="@{/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
+
+
+</body>
+</html>

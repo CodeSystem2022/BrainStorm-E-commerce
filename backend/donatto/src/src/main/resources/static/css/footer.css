@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+.footer-elemento {
+    display: inline-block;
+    margin: 10px;
+}
+
+.pie-pagina{
+    background-color: #6a7db8;
+}
+.pie-pagina .grupo-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 50%;
+}
+.pie-pagina .grupo-1 .box {
+flex: 1;
+text-align: center;
+margin: 10px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box {
+    color: #efefef;
+    margin-bottom: 1px;
+}
+.pie-pagina .grupo-1 .red-social a {
+    font-size: 24px;
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #00000028;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color:#8089C0;
+}
+.pie-pagina .grupo-2{
+    text-align: center;
+    background-color: #8089C0;
+    padding: 5px 5px;
+    text-align: center;
+    color: #fff;
+
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+h2 {
+    color: #ffffff;
+}
