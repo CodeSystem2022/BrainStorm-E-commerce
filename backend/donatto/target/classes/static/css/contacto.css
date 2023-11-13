@@ -1,0 +1,71 @@
+
+h1{
+    color: #6a7db8;
+}
+.contact-form {
+    width: 600px;
+    height: 600px;
+    background-color: #fff;
+    position: absolute;
+    margin: 50px 20px;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #8089c0a1;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #b8b6b6;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #8089C0;
+    color: #fff;
+    padding:10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #52587c;
+}
+
+.social-icons {
+    text-align: center;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #8089C0;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    background-color: #52587c;
+}
+
+.social-icons {
+    margin-top: -40px; 
+    margin-left: 225px;
+}

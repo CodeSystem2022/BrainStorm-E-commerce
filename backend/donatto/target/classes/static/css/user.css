@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+@media screen and (max-width: 500px) {
+    .logo img {
+        max-height: 10px;
+    }
+
+    .search {
+        margin: 0;
+    }
+
+    .search input {
+        width: 70%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .navegacion {
+        display: none;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #fff;
+}
+
+nav {
+    background-color: #6a7db8;
+    color: #fff;
+    display: flex;
+    width: 100%;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
+    text-align: left;
+}
+
+
+.logo img {
+    max-height: 70px;
+    margin-left: 20px; 
+}
+
+.search {
+    flex: 1;
+    margin: 0 20px; 
+    text-align: left;
+}
+
+.search input {
+    width: 20%; 
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search button {
+    background-color: #E4E3E9;
+    color: #000000;
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Menú */
+.menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-right: 20px;
+    text-align: left;
+}
+
+.menu ul li:last-child {
+    margin-right: 20px;
+}
+
+.menu ul a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu img {
+    height: 30px;
+    margin-top: -10px;
+}
+
+.market {
+    align-items: flex-start;
+}
+
+/* Segunda barra de navegación */
+
+.navegacion {
+    width: 100%;
+    height: 34px !important;
+    margin: 0px auto;
+    background: #8089C0;
+}
+
+.navegacion ul {
+    list-style: none;
+}
+
+.menu2 > li {
+    display: inline-block;
+}
+
+.menu2 > li > a {
+    display: block;
+    padding: 8px 20px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+.menu2 li a:hover {
+    background-color: #E4E3E9;
+    color: #000000;
+    transition: all .3s;
+}
+
+/* Submenu */
+.submenu {
+    position: absolute;
+    background: #0000008e;
+    width: 15%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1.5s;
+    z-index: 1;
+}
+
+.submenu li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+
+.menu2 li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Footer */
